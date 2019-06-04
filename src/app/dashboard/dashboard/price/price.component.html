@@ -1,0 +1,46 @@
+<mat-card *ngIf="price">
+  <mat-card-title fxLayout="row" fxLayoutAlign="start center">
+    <mat-icon>attach_money</mat-icon>
+    Price Info
+  </mat-card-title>
+  <!--mat-card-content>
+    <div class="table-container">
+      <table>
+          <tr>
+            <td>Price</td>
+            <td>CN¥{{price.price_vktcny| number:'1.6-6' }} CNY</td>
+          </tr>
+          <tr>
+            <td>Volume 24h</td>
+            <td>{{price.volume_24h | number:'1.2-2'}} VKT</td>
+          </tr>
+          <tr>
+            <td>Market Cap</td>
+            <td>{{price.price_vktcny * price.total_supply | currency:'CNY':'symbol'}} CNY</td>
+          </tr>
+          <tr>
+            <td>% Change 24h</td>
+            <td>
+              {{price.percent_change_1d | percent:'1.2'}}
+              <app-price-trending [percentage]="price.percent_change_1d"></app-price-trending>
+            </td>
+          </tr>
+          <tr>
+            <td>% Change 7d</td>
+            <td>
+              {{price.percent_change_7d| percent:'1.2'}}
+              <app-price-trending [percentage]="price.percent_change_7d"></app-price-trending>
+            </td>
+          </tr>
+        <tr>
+          <td>Circulating Supply</td>
+          <td>{{price.circulating_supply | number}} VKT</td>
+        </tr>
+        <tr>
+          <td>Total Supply</td>
+          <td>{{price.total_supply | number}} VKT</td>
+        </tr>
+      </table>
+    </div>
+  </mat-card-content>
+</mat-card-->
