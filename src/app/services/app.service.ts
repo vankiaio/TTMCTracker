@@ -55,7 +55,6 @@ export class AppService {
           const transactions = current.transactions.map(transaction => {
             return {
               ...transaction,
-              block_num: current.block_num,
               trx: typeof transaction.trx === 'string' ? { id: transaction.trx } : transaction.trx
             };
           })
@@ -93,7 +92,7 @@ export class AppService {
       map(data => data.rows[0]),
       map(data => {
         const base = Number(data.base.balance.replace('RAM', ''));
-        const quote = Number(data.quote.balance.replace('VKT', ''));
+        const quote = Number(data.quote.balance.replace('TTMC', ''));
         return {
           ...data,
           price: quote / base

@@ -12,7 +12,7 @@ declare let ga: Function;
 })
 
 export class AppComponent {
-  title = 'VKT Tracker | EosTracker.io';
+  title = 'TTMC EXPLORER | ttmc.io';
   @LocalStorage()
   language: any;
 
